@@ -4,8 +4,34 @@
     box-sizing: border-box;
 }
 
-.container{
+.b1{
     width: 100%;
     min-height: 100vh;
     background: lightgreen;
 }
+
+.taskapp{
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 10px;    
+}
+
+ul li{
+    user-select: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+#checkbox:checked,
+p#cutline{
+    text-decoration: line-through;
+}
+
