@@ -30,8 +30,7 @@ ul li::before{
 
 }
 
-#checkbox:checked,
-p#cutline{
+.checkbox:checked + .cutLine {
     text-decoration: line-through;
 }
 

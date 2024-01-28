@@ -18,7 +18,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="js/script.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <div class="b1">
@@ -27,52 +27,19 @@
           <h5 class="d-flex justify-content-center text-bold fw-bolder">
             Task App
           </h5>
-          <label for="">Task:</label>
-          <input id="input" type="text" />
-          <button>ADD</button>
-          <!-- <ul id="task_list">
-            <li>t1</li>
-            <li>t2</li>
-            <li>t3</li>
-            <li>t4</li>
-            <li>t5</li>
-          </ul> -->
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="checkbox"
-            />
-            <label class="form-check-label" for="flexCheckDefault">
-              <p id="cutline">Default checkbox</p>
+          <label for="input">Task:</label>
+          <input id="input_Task" type="text" />
+          <button onclick="addTask()">ADD</button>
+
+          <div class="form-check" id="task_list">
+            <input class="form-check-input checkbox" type="checkbox" value="" />
+            <label class="form-check-label cutLine" for="flexCheckDefault">
+              <p>Default checkbox 1</p>
             </label>
           </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckChecked"
-              checked
-            />
-            <label class="form-check-label" for="flexCheckChecked">
-              Checked checkbox
-            </label>
-          </div>
+
         </div>
       </div>
     </div>
-    <script>
-      const checkbox = document.getElementById("checkbox");
-      const cutLine = document.getElementById("cutLine");
-      checkbox.addEventListener("change", function () {
-        if (this.checked) {
-          cutLine.style.textDecoration = "line-through";
-        } else {
-          cutLine.style.textDecoration = "none";
-        }
-      });
-    </script>
   </body>
 </html>
