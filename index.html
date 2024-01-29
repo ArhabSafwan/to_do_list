@@ -27,16 +27,27 @@
           <h5 class="d-flex justify-content-center text-bold fw-bolder">
             Task App
           </h5>
-          <label for="input">Task:</label>
+          <div class="d-flex justify-content-center">
+            <label for="input">Task:</label>
           <input id="input_Task" type="text" />
           <button onclick="addTask()">ADD</button>
+          </div>
+          
 
-          <div class="form-check" id="task_list">
+          <h5 class="d-flex justify-content-center text-bold fw-bolder">
+            Assigned Task 
+          </h5>
+
+          <div class="form-check d-flex justify-content-center" id="task_list">
             <input class="form-check-input checkbox" type="checkbox" value="" />
             <label class="form-check-label cutLine" for="flexCheckDefault">
               <p>Default checkbox 1</p>
             </label>
           </div>
+
+          <h5 class="d-flex justify-content-center text-bold fw-bolder">
+            Completed Task 
+          </h5>
 
         </div>
       </div>
