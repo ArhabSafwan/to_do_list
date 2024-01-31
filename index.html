@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task List</title>
 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -18,39 +20,34 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="js/script.js"></script>
+   
   </head>
   <body>
     <div class="b1">
       <div class="container d-flex justify-content-center pt-5">
         <div class="taskapp pb-5">
-          <h5 class="d-flex justify-content-center text-bold fw-bolder">
+          <h3 class="d-flex justify-content-center text-bold fw-bolder">
             Task App
-          </h5>
-          <div class="d-flex justify-content-center">
-            <label for="input">Task:</label>
-          <input id="input_Task" type="text" />
-          <button onclick="addTask()">ADD</button>
-          </div>
-          
-
-          <h5 class="d-flex justify-content-center text-bold fw-bolder">
-            Assigned Task 
-          </h5>
-
-          <div class="form-check d-flex justify-content-center" id="task_list">
-            <input class="form-check-input checkbox" type="checkbox" value="" />
-            <label class="form-check-label cutLine" for="flexCheckDefault">
-              <p>Default checkbox 1</p>
-            </label>
+          </h3>
+          <div class="taskInput d-flex">
+            <input type="text" placeholder="ADD TEXT" />
+            <button>ADD</button>
           </div>
 
-          <h5 class="d-flex justify-content-center text-bold fw-bolder">
-            Completed Task 
-          </h5>
+          <ol
+            class="assigned text-bold fw-bolder"
+          >
+            <h3>Assigned Task</h1>
+          </ol>
 
+          <ol
+            class="completed justify-content-center text-bold fw-bolder"
+          >
+            <h3>Completed Task</h1>
+          </ol>
         </div>
       </div>
     </div>
   </body>
 </html>
+<script src="js/script.js"></script>

@@ -7,7 +7,7 @@
 .b1{
     width: 100%;
     min-height: 100vh;
-    background: lightgreen;
+    background: darkgreen;
 }
 
 .taskapp{
@@ -34,3 +34,55 @@ ul li::before{
     text-decoration: line-through;
 }
 
+.taskInput >input{
+    width: 90%;
+	color: #333;
+	border:none;
+	border-bottom: 2px solid #666;
+	background: none;
+	padding: 10px;
+	
+	outline: none;
+}
+.taskInput button{
+	margin: 0 10px;
+	background: #222;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.assigned, .completed{
+	margin: 5px 0;
+	padding: 20px;
+}
+ol li{
+	width: 100%;
+	padding: 18px;
+	margin: 5px 0;
+	counter-increment: my-counter;
+}
+ol li::before{
+	
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 2rem;
+	text-align: center;
+	color: #fff;
+	margin-right: 0.5rem;
+}
+li button{
+	padding: 5px;
+	line-height: 28px;
+	margin-right: 15px;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
